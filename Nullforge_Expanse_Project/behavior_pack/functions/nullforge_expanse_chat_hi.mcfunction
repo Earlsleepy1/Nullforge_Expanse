@@ -1,0 +1,1 @@
+say [Nullforge Bot] Hello there! I am your Nullforge assistant. Ask me for commands with /function nullforge_expanse_chat_help.

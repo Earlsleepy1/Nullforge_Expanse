@@ -1,0 +1,1 @@
+say [Nullforge Bot] Nullforge Expanse is a corrupted realm where voidforged tech and ancient automatons roam. Continue by summoning bots and crafting voidforged armor.

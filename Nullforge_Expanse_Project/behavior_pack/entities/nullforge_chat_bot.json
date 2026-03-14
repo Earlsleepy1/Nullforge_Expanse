@@ -1,0 +1,33 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "nullforge:chat_bot",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["chat_bot", "npc"]
+      },
+      "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },
+      "minecraft:collision_box": { "width": 0.6, "height": 1.95 },
+      "minecraft:health": { "value": 20, "max": 20 },
+      "minecraft:pushable": { "is_pushable": true, "is_pushable_by_piston": true },
+      "minecraft:behavior.random_look_around": {},
+      "minecraft:behavior.random_stroll": {},
+      "minecraft:interact": {
+        "interact_text": "Talk to Nullforge Chatbot",
+        "on_interact": { "event": "nullforge:chat_response" }
+      }
+    },
+    "events": {
+      "nullforge:chat_response": {
+        "run_command": {
+          "command": "function nullforge_expanse.chatbot_response"
+        }
+      }
+    }
+  }
+}

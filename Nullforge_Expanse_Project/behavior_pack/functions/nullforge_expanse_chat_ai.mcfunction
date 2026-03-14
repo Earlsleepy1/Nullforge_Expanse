@@ -1,0 +1,1 @@
+say [Nullforge Bot] I’m a scripting chatbot in MC; for real reasoned conversations run text commands with /function nullforge_expanse_chat_*.

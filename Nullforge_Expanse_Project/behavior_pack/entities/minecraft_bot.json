@@ -1,0 +1,101 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "nullforge:minecraft_bot",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["minecraft_bot", "monster"]
+      },
+      "minecraft:inventory": {
+        "size": 200,
+        "drop_contents": true,
+        "use_container_bar": false,
+        "container_name": "Minecraft Bot Inventory"
+      },
+      "minecraft:interact": {
+        "interact_text": "Open Bot Inventory",
+        "on_interact": {
+          "event": "minecraft:open_container"
+        }
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.95
+      },
+      "minecraft:movement": {
+        "value": 0.18
+      },
+      "minecraft:physics": {
+        "has_gravity": true
+      },
+      "minecraft:health": {
+        "value": 900,
+        "max": 900
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/minecraft_bot.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/minecraft_bot_gear.json",
+        "drop_chance": 1.0
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": [
+                {
+                  "test": "has_damage",
+                  "value": "fatal"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 6
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {
+        "default_values": {
+          "max_optimized_distance": 80.0,
+          "max_dropped_ticks": 10,
+          "use_motion_prediction_hints": true
+        }
+      },
+      "minecraft:behavior.look_at_target": {},
+      "minecraft:behavior.random_look_around": {},
+      "minecraft:behavior.random_stroll": {
+        "speed_multiplier": 1.0,
+        "avoid_sun": false
+      },
+      "minecraft:behavior.move_to_target": {
+        "speed_multiplier": 1.0,
+        "target_selector": "player",
+        "within_radius": 20,
+        "must_see": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "target": "player",
+        "within_radius": 18,
+        "must_see": true
+      },
+      "minecraft:behavior.melee_attack": {
+        "attack_types": "melee"
+      }
+    }
+  }
+}
