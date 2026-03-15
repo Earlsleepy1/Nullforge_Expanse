@@ -1,0 +1,61 @@
+{
+    "popup_anim": {
+        "anim_type": "offset",
+        "easing": "linear",
+        "from": [ "14% + 180px", 30 ],
+        "to": "$popup_distance_to",
+        "duration": "$transition_time",
+        "$anim_event_name|default": "toast_animation_finished",
+        "end_event": "$anim_event_name"
+    },
+    "recipe_unlocked_anim_start": {
+        "anim_type": "offset",
+        "easing": "out_quart",
+        "from": [ 300, 0 ],
+        "to": [ 0, 0 ],
+        "duration": "$transition_time",
+        "next": "@toast_screen.recipe_unlocked_anim_wait",
+        "end_event": "toast_animation_in_finished"
+    },
+    "recipe_unlocked_anim_wait": {
+        "anim_type": "wait",
+        "duration": "$display_time",
+        "next": "@toast_screen.recipe_unlocked_anim_end"
+    },
+    "recipe_unlocked_anim_end": {
+        "anim_type": "offset",
+        "easing": "in_quart",
+        "from": [ 0, 0 ],
+        "to": [ 300, 0 ],
+        "duration": 1,
+        "end_event": "toast_animation_out_finished"
+    },
+    "recipe_unlocked_popup": {
+        "size": [ "100%cm", "100%cm" ],
+        "$display_time|default": 3,
+        "$toast_control": "recipe_unlocked",
+        "$offset_anims": [ "@toast_screen.recipe_unlocked_anim_start" ],
+        "anchor_from": "top_right",
+        "anchor_to": "top_right",
+        "modifications": [
+            {
+                "array_name": "controls",
+                "operation": "insert_back",
+                "value": [
+                    {
+                        "crafting_table_icon@toast_screen.item_renderer": {
+                            "size": [9, 9],
+                            "anchor_from": "top_left",
+                            "anchor_to": "top_left",
+                            "offset": [2, 2],
+                            "layer": 1,
+                            "property_bag": {
+                                "#item_id_aux": 3801088
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

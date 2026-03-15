@@ -1,0 +1,69 @@
+{
+    "namespace": "boss_commons",
+    "boss_health_template": {
+        "type": "panel",
+        "anchor_from": "top_middle",
+        "anchor_to": "top_middle",
+        "size": [240, 61],
+        "bindings": [
+            {
+                "binding_name": "(#bossName = $boss_name)",
+                "binding_type": "collection",
+                "binding_collection_name": "boss_bars",
+                "binding_name_override": "#visible"
+            }
+        ]
+    },
+    "bar_empty": {
+        "type": "image",
+        "layer": 1,
+        "size": [182, 7],
+        "offset": [0, 8.5],
+        "keep_ratio": false
+    },
+    "bar_full": {
+        "type": "image",
+        "layer": 2,
+        "size": [182, 7],
+        "offset": [0, 8.5],
+        "keep_ratio": false,
+        "clip_direction": "left",
+        "clip_pixelperfect": true,
+        "bindings": [
+            {
+                "binding_type": "collection",
+                "binding_name": "#progress_percentage",
+                "binding_name_override": "#clip_ratio",
+                "binding_collection_name": "$progress_bar_collection"
+            }
+        ]
+    },
+    "bar_overlay": {
+        "type": "image",
+        "layer": 3,
+        "size": [182, 14],
+        "offset": [0, 6],
+        "keep_ratio": false
+    },
+    "dragon_bossbar@boss_health_template": {
+        "controls": [
+            {"empty_bar@boss_commons.bar_empty": {"texture": "textures/ui/bossbars/dragon/boss_empty"}},
+            {"full_bar@boss_commons.bar_full": {"texture": "textures/ui/bossbars/dragon/boss_full"}},
+            {"bar_overlay@boss_commons.bar_overlay": {"texture": "textures/ui/bossbars/dragon/boss_overlay"}}
+        ]
+    },
+    "wither_bossbar@boss_health_template": {
+        "controls": [
+            {"empty_bar@boss_commons.bar_empty": {"texture": "textures/ui/bossbars/wither/boss_empty"}},
+            {"full_bar@boss_commons.bar_full": {"texture": "textures/ui/bossbars/wither/boss_full"}},
+            {"bar_overlay@boss_commons.bar_overlay": {"texture": "textures/ui/bossbars/wither/boss_overlay"}}
+        ]
+    },
+    "nullforge_expanse_bossbar@boss_health_template": {
+        "controls": [
+            {"empty_bar@boss_commons.bar_empty": {"texture": "textures/ui/bossbars/nullforge_expanse/boss_empty"}},
+            {"full_bar@boss_commons.bar_full": {"texture": "textures/ui/bossbars/nullforge_expanse/boss_full"}},
+            {"bar_overlay@boss_commons.bar_overlay": {"texture": "textures/ui/bossbars/nullforge_expanse/boss_overlay"}}
+        ]
+    }
+}
