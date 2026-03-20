@@ -1,0 +1,237 @@
+{
+  "serverName": "Nullforge Expanse",
+  "serverDescription": "A community for the Nullforge Expanse Minecraft mod - Explore the void, conquer mechanical enemies, and master ancient technology",
+  "serverIcon": "nullforge_expanse_icon.png",
+  "defaultRole": "@everyone",
+  "roles": [
+    {
+      "id": "admin",
+      "name": "👑 Admins",
+      "color": "#FF6B00",
+      "permissions": ["ADMINISTRATOR"],
+      "mentionable": false,
+      "hoist": true
+    },
+    {
+      "id": "moderator",
+      "name": "⚔️ Moderators",
+      "color": "#FF8C00",
+      "permissions": ["MANAGE_MESSAGES", "MANAGE_MEMBERS", "KICK_MEMBERS"],
+      "mentionable": false,
+      "hoist": true
+    },
+    {
+      "id": "developer",
+      "name": "⚙️ Developers",
+      "color": "#00BFFF",
+      "permissions": ["MANAGE_CHANNELS", "MANAGE_WEBHOOKS"],
+      "mentionable": false,
+      "hoist": true
+    },
+    {
+      "id": "verified",
+      "name": "✅ Verified",
+      "color": "#32CD32",
+      "permissions": [],
+      "mentionable": false,
+      "hoist": false
+    },
+    {
+      "id": "explorer",
+      "name": "🗺️ Explorers",
+      "color": "#9370DB",
+      "permissions": [],
+      "mentionable": false,
+      "hoist": false
+    },
+    {
+      "id": "bot",
+      "name": "🤖 Bots",
+      "color": "#808080",
+      "permissions": [],
+      "mentionable": false,
+      "hoist": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "info",
+      "name": "📋 INFORMATION",
+      "channels": [
+        {
+          "id": "welcome",
+          "name": "welcome",
+          "type": "text",
+          "topic": "Welcome to Nullforge Expanse! Start here.",
+          "nsfw": false
+        },
+        {
+          "id": "rules",
+          "name": "rules",
+          "type": "text",
+          "topic": "Community guidelines and server rules",
+          "nsfw": false
+        },
+        {
+          "id": "announcements",
+          "name": "announcements",
+          "type": "text",
+          "topic": "Important updates and news about the mod",
+          "nsfw": false
+        },
+        {
+          "id": "changelog",
+          "name": "changelog",
+          "type": "text",
+          "topic": "Version updates and patch notes",
+          "nsfw": false
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "name": "💬 COMMUNITY",
+      "channels": [
+        {
+          "id": "general",
+          "name": "general",
+          "type": "text",
+          "topic": "General discussion about the mod and Minecraft",
+          "nsfw": false
+        },
+        {
+          "id": "showcase",
+          "name": "showcase",
+          "type": "text",
+          "topic": "Share your adventures and creations",
+          "nsfw": false
+        },
+        {
+          "id": "introductions",
+          "name": "introductions",
+          "type": "text",
+          "topic": "Introduce yourself to the community",
+          "nsfw": false
+        },
+        {
+          "id": "off-topic",
+          "name": "off-topic",
+          "type": "text",
+          "topic": "Non-Minecraft related conversations",
+          "nsfw": false
+        }
+      ]
+    },
+    {
+      "id": "gameplay",
+      "name": "🎮 GAMEPLAY",
+      "channels": [
+        {
+          "id": "guides-tutorials",
+          "name": "guides-tutorials",
+          "type": "text",
+          "topic": "How-to guides, tips, and tutorials for the mod",
+          "nsfw": false
+        },
+        {
+          "id": "builds-creations",
+          "name": "builds-creations",
+          "type": "text",
+          "topic": "Share impressive builds and creations",
+          "nsfw": false
+        },
+        {
+          "id": "combat-strategies",
+          "name": "combat-strategies",
+          "type": "text",
+          "topic": "Combat tips for defeating Nullforge enemies and bosses",
+          "nsfw": false
+        },
+        {
+          "id": "gear-crafting",
+          "name": "gear-crafting",
+          "type": "text",
+          "topic": "Discussions about recipes, crafting, and gear optimization",
+          "nsfw": false
+        }
+      ]
+    },
+    {
+      "id": "technical",
+      "name": "⚙️ TECHNICAL",
+      "channels": [
+        {
+          "id": "installation-support",
+          "name": "installation-support",
+          "type": "text",
+          "topic": "Help with mod installation and troubleshooting",
+          "nsfw": false
+        },
+        {
+          "id": "bug-reports",
+          "name": "bug-reports",
+          "type": "text",
+          "topic": "Report bugs and issues you encounter",
+          "nsfw": false
+        },
+        {
+          "id": "feature-requests",
+          "name": "feature-requests",
+          "type": "text",
+          "topic": "Suggest new features and improvements",
+          "nsfw": false
+        },
+        {
+          "id": "mod-development",
+          "name": "mod-development",
+          "type": "text",
+          "topic": "Development discussions and technical details",
+          "nsfw": false
+        }
+      ]
+    },
+    {
+      "id": "voice",
+      "name": "🎙️ VOICE",
+      "channels": [
+        {
+          "id": "voice-general",
+          "name": "general",
+          "type": "voice"
+        },
+        {
+          "id": "voice-gaming",
+          "name": "gaming",
+          "type": "voice"
+        },
+        {
+          "id": "voice-chill",
+          "name": "chill-lounge",
+          "type": "voice"
+        }
+      ]
+    }
+  ],
+  "welcomeMessage": {
+    "title": "🌌 Welcome to Nullforge Expanse",
+    "description": "Journey into the void and discover the secrets of ancient mechanical civilizations.",
+    "content": "This is the official Discord server for the **Nullforge Expanse** Minecraft mod.\n\n**What is Nullforge Expanse?**\nNullforge Expanse is a biome-driven expansion that blends cosmic void energy with ancient mechanical structures. Explore floating islands, crystal formations, and ancient ruins as you confront the mysterious Endforged Automaton.\n\n**Features:**\n🤖 Unique hostile mobs: Scraplings, Chrono-Stalkers, Void Sentries\n⚔️ Combat with voidforged gear and ancient equipment\n🏗️ Explore corrupted void landscapes and mechanical temples\n🎯 Face the boss: The Endforged Automaton\n💎 Craft powerful items and unlock ancient secrets\n\n**Getting Started:**\n1. Read #rules\n2. Check #announcements for the latest updates\n3. Browse #guides-tutorials for installation help\n4. Introduce yourself in #introductions\n5. Join our voice channels to connect with the community\n\nHave fun exploring the Nullforge Expanse! 🌌",
+    "color": "#6A0DAD"
+  },
+  "rulesMessage": {
+    "title": "📜 Server Rules",
+    "rules": [
+      "Be respectful to all community members",
+      "No harassment, discrimination, or hate speech",
+      "Keep discussions relevant to the channel topic",
+      "No spam, self-promotion, or advertising without permission",
+      "No sharing of pirated content",
+      "Follow Discord's Terms of Service and Community Guidelines",
+      "Use spoiler tags for story/exploration spoilers",
+      "Report bugs and issues properly - don't spam channels",
+      "Admins and Moderators have final say on rule enforcement",
+      "Have fun and enjoy the community!"
+    ],
+    "color": "#FF0000"
+  }
+}
