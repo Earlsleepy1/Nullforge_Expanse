@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "nullforge:nullblade",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "nullforge:nullblade"
+      },
+      "minecraft:display_name": {
+        "value": "item.nullforge:nullblade"
+      },
+      "minecraft:rarity": "epic",
+      "minecraft:damage": 9,
+      "minecraft:durability": {
+        "max_durability": 2031
+      },
+      "minecraft:enchantable": {
+        "value": 15,
+        "slot": "sword"
+      },
+      "minecraft:hand_equipped": true
+    }
+  }
+}

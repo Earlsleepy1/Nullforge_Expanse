@@ -1,12 +1,21 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.21.30",
   "minecraft:item": {
     "description": {
       "identifier": "nullforge:void_gear_core",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:max_stack_size": 64
+      "minecraft:max_stack_size": 64,
+      "minecraft:icon": {
+        "texture": "nullforge:void_gear_core"
+      },
+      "minecraft:display_name": {
+        "value": "item.nullforge:void_gear_core"
+      },
+      "minecraft:rarity": "epic"
     }
   }
 }

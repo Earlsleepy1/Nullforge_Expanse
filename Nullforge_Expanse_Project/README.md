@@ -1,60 +1,45 @@
-# Nullforge Expanse - Minecraft Bedrock Addon
+# Nullforge Expanse — Minecraft Bedrock Add-on
 
-## Welcome to the Nullforge Expanse!
+Nullforge Expanse is a cosmic-void adventure add-on by **earlsleepy**. It adds hostile machines, a boss with phases, Voidforged armor, weapons, crafting materials, custom item icons, entity visuals, and setup functions.
 
-Dive into a cosmic void adventure in this expansion biome for Minecraft Bedrock Edition. Explore fractured dimensions filled with ancient mechanical ruins, floating islands, and powerful void energy. Battle corrupted machines, craft legendary gear, and confront the mighty Endforged Automaton!
+## Install
 
-### Concept Overview
-Nullforge Expanse blends cosmic void energy with ancient mechanical civilizations. The world is a fractured dimension where floating islands, crystal formations, and mechanical structures exist in a corrupted void landscape. Players explore ruins, activate forgotten machines, and face the Endforged Automaton.
+1. Open `Nullforge_Expanse.mcaddon` with Minecraft Bedrock Edition.
+2. Create or edit a world and enable both **Nullforge Expanse Behavior** and **Nullforge Expanse Resource** under Add-Ons.
+3. For a quick start, run:
 
-### Key Features
+   ```mcfunction
+   /function nullforge_expanse_setup
+   ```
 
-#### Biome: Nullforge Expanse
-- **Environment**: Floating stone islands, glowing blue void crystals, mechanical ruins with gear-embedded structures, and corrupted void fog.
-- **Atmosphere**: Mysterious and dangerous, with distant metallic echoes and mechanical sounds.
-- **Access**: Unstable portals appear before defeating the Ender Dragon. After defeating it, a permanent gateway opens.
+The `.mcpack` file is the resource pack only. Most players should use the `.mcaddon` file.
 
-#### Hostile Mobs
-- **Scraplings**: Small corrupted mechanical creatures built from ancient machines. Drop Null Shards.
-- **Chrono-Stalkers**: Void phantoms that manipulate time when making eye contact. Drop Null Shards.
-- **Void Sentries**: Ancient automated defense turrets guarding structures. Drop Void Gear Cores.
-- **Endforged Automaton (Boss)**: A massive void-powered mechanical construct.
-  - **Phases**: Mechanical slams and spinning blades (Phase 1), gravity distortions and projectile barrages (Phase 2), exposed core with collapsing arena (Final Phase).
-  - **Drops**: Void Gear Core, Automaton Plating, Null Shards.
+## Gameplay
 
-#### Void Tech Equipment
-- **Voidforged Armor**: Upgradeable armor with modular attachments (auto-repair, glide booster, void dash, piston punch). Crafted from Automaton Plating.
-- **Weapons**:
-  - **Nullblade**: Void energy sword with sweeping attacks.
-  - **Gearhammer**: Heavy hammer causing shockwaves and knockback.
-  - **Chrono Bow**: Slows enemies on hit.
-- **Items**: Null Shards, Void Gear Cores, Automaton Plating, Nullforge Music Disc.
+- **Mobs:** Scrapling, Chrono-Stalker, Void Sentry, Minecraft Bot, and Nullforge Chat Bot.
+- **Boss:** Endforged Automaton with escalating attack phases.
+- **Materials:** Null Shard, Void Gear Core, and Automaton Plating.
+- **Equipment:** Nullblade, Gearhammer, Chrono Bow, Bot Summoner, and a full Voidforged armor set.
+- **Portal tools:** Run `/function nullforge_expanse_portal_corrupted` for the unstable portal frame, or `/function nullforge_expanse_portal_after_dragon` for the post-dragon gateway platform. Stand on the pressure plate and run `/function nullforge_expanse_portal_check` to teleport to the Nullforge coordinates.
+- **Chat bot:** Run `/function nullforge_expanse_chat_help` for the scripted lore commands.
 
-#### Structures
-- **Nullforge Temple**: Ancient structure with golden mechanical patterns and glowing crystals. Features hidden doors, puzzle chambers, void energy reactors, and Scrapling spawns.
+## Testing commands
 
-### Installation
-1. Download the `Nullforge_Expanse.mcaddon` file.
-2. Open Minecraft Bedrock Edition.
-3. Go to Settings > Global Resources > Import.
-4. Select the .mcaddon file to import.
-5. Create a new world or edit an existing one.
-6. In World Settings > Add-ons, enable "Nullforge Expanse Behavior" and "Nullforge Expanse Resource".
-7. Start playing! Use `/locate biome nullforge:nullforge_expanse` to find the biome or `/summon nullforge:scrapling` to spawn mobs.
+```mcfunction
+/summon nullforge:scrapling
+/summon nullforge:chrono_stalker
+/summon nullforge:void_sentry
+/summon nullforge:endforged_automaton
+/give @s nullforge:voidforged_chestplate
+/function nullforge_expanse_reset
+```
 
-### Crafting Recipes
-- **Voidforged Armor**: Craft helmets, chestplates, leggings, and boots using Automaton Plating.
-- **Weapons**: Nullblade (Null Shards + Void Gear Core), Gearhammer (Automaton Plating + Void Gear Core), Chrono Bow (String + Void Gear Core).
+## Notes
 
-### Tips for New Players
-- Explore the void carefully—mobs are aggressive and the environment is hazardous.
-- Collect Null Shards from Scraplings to craft basic items.
-- Defeat Void Sentries for Void Gear Cores to unlock advanced crafting.
-- Prepare for the Endforged Automaton boss fight with full Voidforged Armor and weapons.
-- Listen to the Nullforge Music Disc for an immersive atmosphere.
+The add-on uses stable Bedrock custom-item formats and includes generated placeholder textures so items and entities render immediately. The visual assets are designed to be replaced or refined in Blockbench without changing identifiers or recipes.
 
-### Credits
-Concept by earlsleepy.  
-Addon created for Minecraft Bedrock Edition.
+Minecraft Bedrock does not use the empty `Nullforge Expanse java` path; the playable add-on is in `Nullforge_Expanse_Project/`.
 
-Enjoy your journey through the Nullforge Expanse!
+## License
+
+Personal, non-commercial use only. See `LICENSE` for the full terms.

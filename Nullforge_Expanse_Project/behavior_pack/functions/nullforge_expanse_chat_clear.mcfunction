@@ -1,1 +1,1 @@
-say [Nullforge Bot] Conversation reset. Ask again with /function nullforge_expanse_chat_hi or /function nullforge_expanse_chat_help.
+tellraw @a {"rawtext":[{"text":"§b[Nullforge Bot] §fConversation reset."}]}

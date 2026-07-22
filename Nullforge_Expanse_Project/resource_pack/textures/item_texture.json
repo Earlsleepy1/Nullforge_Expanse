@@ -1,0 +1,48 @@
+{
+  "resource_pack_name": "Nullforge Expanse Resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "nullforge:null_shard": {
+      "textures": "textures/items/null_shard"
+    },
+    "nullforge:void_gear_core": {
+      "textures": "textures/items/void_gear_core"
+    },
+    "nullforge:automaton_plating": {
+      "textures": "textures/items/automaton_plating"
+    },
+    "nullforge:nullblade": {
+      "textures": "textures/items/nullblade"
+    },
+    "nullforge:gearhammer": {
+      "textures": "textures/items/gearhammer"
+    },
+    "nullforge:chrono_bow": {
+      "textures": "textures/items/chrono_bow"
+    },
+    "nullforge:voidforged_helmet": {
+      "textures": "textures/items/voidforged_helmet"
+    },
+    "nullforge:voidforged_chestplate": {
+      "textures": "textures/items/voidforged_chestplate"
+    },
+    "nullforge:voidforged_leggings": {
+      "textures": "textures/items/voidforged_leggings"
+    },
+    "nullforge:voidforged_boots": {
+      "textures": "textures/items/voidforged_boots"
+    },
+    "nullforge:nullforge_disc": {
+      "textures": "textures/items/nullforge_disc"
+    },
+    "nullforge:bot_summoner": {
+      "textures": "textures/items/bot_summoner"
+    },
+    "nullforge:minecraft_bot_spawn_egg": {
+      "textures": "textures/items/minecraft_bot_spawn_egg"
+    },
+    "nullforge:chat_bot_spawn_egg": {
+      "textures": "textures/items/chat_bot_spawn_egg"
+    }
+  }
+}

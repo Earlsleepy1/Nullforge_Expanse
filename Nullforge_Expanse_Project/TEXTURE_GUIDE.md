@@ -1,60 +1,31 @@
-# Texture Guide for Nullforge 
+# Nullforge Expanse Texture Guide
 
-## Entities
+The project includes working placeholder textures so the Bedrock packs load without missing-texture references. Replace them with final pixel art or Blockbench exports while keeping the same paths and identifiers.
 
-### Entity Name: SampleEntity
-- **Dimensions**: 256x256 pixels
-- **Color Palette**: 
-  - Base Color: `#FF5733`
-  - Accent Color: `#C70039`
-- **Design Specifications**: 
-  - Styled with a sci-fi theme.
-  - Must include lighting effects.
-- **Export Settings**: 
-  - Format: PNG
-  - DPI: 300
+## Item icons
 
----
+Item icons are 16×16 PNGs under `resource_pack/textures/items/` and are mapped in `resource_pack/textures/item_texture.json`.
 
-## Weapons
+| Item | File |
+|---|---|
+| Null Shard | `null_shard.png` |
+| Void Gear Core | `void_gear_core.png` |
+| Automaton Plating | `automaton_plating.png` |
+| Nullblade | `nullblade.png` |
+| Gearhammer | `gearhammer.png` |
+| Chrono Bow | `chrono_bow.png` |
+| Voidforged armor | `voidforged_helmet.png`, `voidforged_chestplate.png`, `voidforged_leggings.png`, `voidforged_boots.png` |
 
-### Weapon Name: SampleWeapon
-- **Dimensions**: 512x128 pixels
-- **Color Palette**: 
-  - Base Color: `#33FF5A`
-  - Highlight Color: `#FFC300`
-- **Design Specifications**: 
-  - Futuristic design with sharp edges.
-- **Export Settings**:
-  - Format: TGA
-  - DPI: 300
+## Entity textures
 
----
+Entity placeholder textures are under `resource_pack/textures/entity/`. Each client entity currently uses vanilla humanoid geometry so the add-on remains functional without custom models. Replace the textures and later swap in Blockbench geometry if desired.
 
-## Armor
+## Armor textures
 
-### Armor Name: SampleArmor
-- **Dimensions**: 512x512 pixels
-- **Color Palette**: 
-  - Primary Color: `#335BFF`
-  - Secondary Color: `#8E44AD`
-- **Design Specifications**:
-  - Layered structure for added detail.
-- **Export Settings**:
-  - Format: BMP
-  - DPI: 300
+Voidforged armor uses the standard Bedrock humanoid armor attachables:
 
----
+- `resource_pack/textures/models/armor/voidforged_1.png` for helmet, chestplate, and boots.
+- `resource_pack/textures/models/armor/voidforged_2.png` for leggings.
+- `resource_pack/attachables/voidforged_*.json` connects the worn items to the vanilla armor geometry.
 
-## Materials
-
-### Material Name: SampleMaterial
-- **Dimensions**: 1024x1024 pixels
-- **Color Palette**: 
-  - Main Color: `#DFFF00`
-  - Shading: `#A3DFFF`
-- **Design Specifications**:
-  - Textured with realistic bumps.
-- **Export Settings**:
-  - Format: JPG
-  - DPI: 300
+Keep the armor atlas in a Bedrock-compatible layout and preserve the filenames.

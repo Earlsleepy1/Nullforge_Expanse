@@ -1,12 +1,21 @@
 {
-  "format_version": "1.16.100",
+  "format_version": "1.21.30",
   "minecraft:item": {
     "description": {
       "identifier": "nullforge:nullforge_disc",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:max_stack_size": 1,
+      "minecraft:icon": {
+        "texture": "nullforge:nullforge_disc"
+      },
+      "minecraft:display_name": {
+        "value": "item.nullforge:nullforge_disc"
+      },
+      "minecraft:rarity": "rare",
       "minecraft:record": {
         "sound_event": "nullforge.music.nullforge",
         "duration": 180,

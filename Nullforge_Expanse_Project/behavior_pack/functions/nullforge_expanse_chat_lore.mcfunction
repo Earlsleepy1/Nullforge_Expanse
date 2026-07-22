@@ -1,1 +1,1 @@
-say [Nullforge Bot] Nullforge Expanse is a corrupted realm where voidforged tech and ancient automatons roam. Continue by summoning bots and crafting voidforged armor.
+tellraw @a {"rawtext":[{"text":"§b[Nullforge Bot] §fNullforge Expanse is a corrupted realm where voidforged technology and ancient automatons roam."}]}
