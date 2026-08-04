@@ -12,7 +12,14 @@
     "openai": "^4.24.7",
     "minecraft-protocol": "^1.45.0"
   },
-  "keywords": ["discord", "bot", "minecraft"],
+  "keywords": [
+    "discord",
+    "bot",
+    "minecraft"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "overrides": {
+    "axios@<=1.18.0": "1.18.0"
+  }
 }
